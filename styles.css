@@ -15,6 +15,10 @@ body {
   margin: 0;
   padding: 20px;
 }
+.logo {
+        float: right;
+        margin-left: 0px; /* ajustez la valeur de la marge selon vos besoins */
+}
 .page {
   background: #e2e2e5;
   display: flex;
@@ -60,7 +64,7 @@ body {
   }
 }
 .login {
-  font-size: 50px;
+  font-size: 30px;
   font-weight: 900;
   margin: 50px 40px 40px;
 }
