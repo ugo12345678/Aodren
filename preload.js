@@ -5,7 +5,20 @@
  * 
  * https://www.electronjs.org/docs/latest/tutorial/sandbox
  */
+
+
 window.addEventListener('DOMContentLoaded', () => {
+  const dao = require('./dao')
+  const {contextBridge} = require('electron')
+
+  const getUtilisateurs = () => {
+      return dao.getUtilisateurs();
+  }
+
+contextBridge.exposeInMainWorld("api", {
+    getUtilisateurs: getUtilisateurs
+})
+
   const replaceText = (selector, text) => {
     const element = document.getElementById(selector)
     if (element) element.innerText = text
