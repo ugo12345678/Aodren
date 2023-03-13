@@ -9,6 +9,6 @@ window.addEventListener('DOMContentLoaded', () => {
 
     let test = window.api.getUtilisateurs()
 
-    console.log(test);
+    console.log(test+"ok");
    
   })
