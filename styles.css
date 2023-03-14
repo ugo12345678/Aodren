@@ -16,8 +16,7 @@ body {
   padding: 20px;
 }
 .logo {
-        float: right;
-        margin-left: 0px; /* ajustez la valeur de la marge selon vos besoins */
+  padding-left: 42px;
 }
 .page {
   background: #e2e2e5;
