@@ -6,7 +6,38 @@
   </head>
   <body>
         <div id="partie1" class="partie">
-            <button id="boutonMenu1">Sécurité</button>
+          <button id="boutonMenu1">Sécurité</button>
+          <nav role="navigation">
+            <div id="menuToggle">
+              <!--
+              A fake / hidden checkbox is used as click reciever,
+              so you can use the :checked selector on it.
+              -->
+              <input type="checkbox" />
+              
+              <!--
+              Some spans to act as a hamburger.
+              
+              They are acting like a real hamburger,
+              not that McDonalds stuff.
+              -->
+              <span></span>
+              <span></span>
+              <span></span>
+              
+              <!--
+              Too bad the menu has to be inside of the button
+              but hey, it's pure CSS magic.
+              -->
+              <ul id="menu">
+                <a href="#"><li>Entrées / Sorties</li></a>
+                <a href="#"><li>Planifier la Coupe</li></a>
+                <a href="#"><li>Horaires</li></a>
+                <a href="#"><li>Gérer l'Application</li></a>
+                <a href="#"><li>Se Déconnecter</li></a>
+                <a href="https://app.powerbi.com/groups/me/reports/32cfd116-b0c6-475b-a8a7-00ff562dd11e/ReportSection23477707dcd94a9de645" target="_blank"><li>Données Globales</li></a>
+              </ul>
+            </div>
         </div>
         <div id="partie2" class="partie">
             <button id="boutonMenu2">Qualité</button>
