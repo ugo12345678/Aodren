@@ -147,9 +147,12 @@ body {
 /* Donne à chaque partie une couleur différente et stylée */
 .partie {
   position: relative;
+  justify-content: center;
   width: 100%;
   height: 100%;
   overflow: hidden;
+  display: flex;
+  flex-direction: row;
 }
 
 .partie:before {
@@ -193,6 +196,8 @@ body {
   width: calc(100%);
   cursor: pointer;
   margin: 0%;
+  display: flex;
+  justify-content: center;
 }
 
 /* Supprime les bordures entre les parties */
@@ -270,8 +275,8 @@ body {
 #boutonMenu4 {
   color: rgba(0, 0, 0);
   cursor: pointer;
-  height: calc(10%);
-  width: calc(20%);
+  height: calc(150%);
+  width: calc(23%);
   background-color: transparent;
   margin: 2px;
   border-color: #000000;
@@ -295,7 +300,7 @@ button:hover {
    
    /* make it look decent enough */
    background: #232323;
-   color: #cdcdcd;
+   color: #000000;
    font-family: "Avenir Next", "Avenir", sans-serif;
  }
  
@@ -441,3 +446,144 @@ button:hover {
  {
    transform: none;
  }
+
+
+ body {
+  background-color: black;
+}
+
+.container {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  min-width: 60%;
+  padding-top: 47px;
+  justify-content: center;
+}
+
+#bouton4separation{
+display: flex;
+justify-content: center;
+padding-bottom: 50px;
+}
+
+.kanban-heading {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-family: sans-serif;
+  justify-content: center;
+}
+
+.kanban-board {
+  display: flex;
+  justify-content: center;
+  font-family: sans-serif;
+}
+
+.kanban-heading-text {
+  font-size: 1.8rem;
+  background-color: rgba(255, 99, 71, 0.568);
+  padding: 0.8rem 1.7rem;
+  border-radius: 0.5rem;
+  margin: 1rem;
+}
+
+.kanban-block,
+.create-new-task-block {
+  padding: 0.6rem;
+  width: 30.5%;
+  min-width: 14rem;
+  min-height: 4.5rem;
+  border-radius: 0.3rem;
+}
+
+#todo {
+  background-color: #fec6d1cb;
+}
+
+#inprogress {
+  background-color: #ffae00bd;
+  /* display: none; */
+}
+
+#done {
+  background-color: #018b01cc;
+  /* display: none; */
+}
+
+.task {
+  background-color: white;
+  margin: 0.2rem 0rem 0.3rem 0rem;
+  border: 0.1rem solid black;
+  border-radius: 0.2rem;
+  padding: 0.5rem 0.2rem 0.5rem 2rem;
+}
+
+#task-button {
+  margin: 0.2rem 0rem 0.1rem 0rem;
+  background-color: white;
+  border-radius: 0.2rem;
+  width: 100%;
+  border: 0.25rem solid black;
+  padding: 0.5rem 2.7rem;
+  border-radius: 0.3rem;
+  font-size: 1rem;
+}
+
+.create-new-task-block {
+  display: none;
+  /* display: flex; */
+  background: #ffaf00;
+  width: 64.4%;
+  flex-direction: column;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: row;
+  margin: 0.2rem;
+}
+
+.form-row-label {
+  width: 15%;
+  padding: 0.2rem;
+  padding-right: 0.5rem;
+  border: 0.1rem solid black;
+  border-right: 0;
+  border-radius: 0.2rem 0rem 0rem 0.2rem;
+}
+
+.form-row-input {
+  border: 0.1rem solid black;
+  border-radius: 0rem 0.2rem 0.2rem 0rem;
+  width: 85%;
+}
+
+textarea {
+  resize: none;
+}
+
+.form-row-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0.2rem;
+}
+
+#edit-button,
+#save-button,
+#cancel-button {
+  margin: 0.2rem 0rem 0.1rem 0rem;
+  background-color: white;
+  border-radius: 0.2rem;
+  width: 49.2%;
+  border: 0.25rem solid black;
+  padding: 0.5rem 2.7rem;
+  border-radius: 0.3rem;
+  font-size: 1rem;
+}
+
+#edit-button {
+  display: none;
+}
