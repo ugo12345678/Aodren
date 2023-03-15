@@ -44,3 +44,29 @@ app.on('window-all-closed', function () {
 
 // In this file you can include the rest of your app's specific main process
 // code. You can also put them in separate files and require them here.
+
+
+// Récupère le bouton "Accéder au menu"
+//const menuButton = document.getElementById('submit');
+
+// Ajoute un écouteur d'événement "click" sur le bouton
+//menuButton.addEventListener('click', (event) => {
+  // Empêche la soumission du formulaire par défaut
+  //event.preventDefault();
+
+  // Ferme la fenêtre actuelle
+  //const { remote } = require('electron');
+  //const window = remote.getCurrentWindow();
+  //window.close();
+
+  // Charge la page "menu.html" dans une nouvelle fenêtre
+  //const { BrowserWindow } = require('electron');
+  //const win = new BrowserWindow({
+    //width: 800,
+    //height: 600,
+    //webPreferences: {
+      //nodeIntegration: true
+    //}
+  //});
+  //win.loadFile('menu.html');
+//});
