@@ -175,7 +175,7 @@ body {
 }
 
 #partie2:before {
-  background-color: rgb(230, 230, 230);
+  background-color: rgb(225, 225, 225);
   transform: skewY(180deg);
   height: calc(100%);
   width: calc(100%);
@@ -183,7 +183,7 @@ body {
 }
 
 #partie3:before {
-  background-color: rgb(230, 230, 230);
+  background-color: rgb(225, 225, 225);
   transform: skewX(180deg);
   height: calc(100%);
   width: calc(100%);
@@ -228,13 +228,13 @@ body {
 }
 
 #boutonMenu1 {
-  color: rgb(0, 0, 0);
+  color: #48d048;
   cursor: pointer;
   height: calc(15%);
   width: calc(30%);
-  background-color: rgb(103, 216, 120);
+  background-color: transparent;
   margin: 2px;
-  border-color: #000000;
+  border-color: #48d048;
   font-weight: bold;
   border-radius: 12px;
   font-size: 20px;
@@ -242,13 +242,13 @@ body {
 }
 
 #boutonMenu2 {
-  color: rgba(0, 0, 0);
+  color: #a73b3b;
   cursor: pointer;
   height: calc(15%);
   width: calc(30%);
-  background-color: rgb(201, 83, 120);
+  background-color: transparent;
   margin: 2px;
-  border-color: #000000;
+  border-color: #a73b3b;
   font-weight: bold;
   border-radius: 12px;
   font-size: 20px;
@@ -256,14 +256,14 @@ body {
 }
 
 #boutonMenu3 {
-  color: rgba(0, 0, 0);
+  color: #6153cb;
   cursor: pointer;
   height: calc(15%);
   width: calc(30%);
-  background-color: rgb(74, 207, 194);
+  background-color: transparent;
   font-weight: bold;
   margin: 2px;
-  border-color: #000000;
+  border-color: #6153cb;
   font-weight: bold;
   border-radius: 12px;
   font-size: 20px;
@@ -271,13 +271,13 @@ body {
 }
 
 #boutonMenu4 {
-  color: rgba(0, 0, 0);
+  color: #dacd49;
   cursor: pointer;
   height: calc(15%);
   width: calc(30%);
-  background-color: rgb(206, 73, 206);
+  background-color: transparent;
   margin: 2px;
-  border-color: #000000;
+  border-color: #dacd49;
   font-weight: bold;
   border-radius: 12px;
   font-size: 20px;
