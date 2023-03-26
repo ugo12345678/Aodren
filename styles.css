@@ -160,13 +160,14 @@ body {
   position: absolute;
   width: 100%;
   height: 100%;
+  border: 2px solid black;
   top: 0;
   left: 0;
   z-index: -1;
 }
 
 #partie1:before {
-  background-color: rgb(204, 255, 242);
+  background-color: rgb(230, 230, 230);
   transform: rotate(180deg);
   height: calc(100%);
   width: calc(100%);
@@ -174,7 +175,7 @@ body {
 }
 
 #partie2:before {
-  background-color: rgb(255, 204, 229);
+  background-color: rgb(225, 225, 225);
   transform: skewY(180deg);
   height: calc(100%);
   width: calc(100%);
@@ -182,7 +183,7 @@ body {
 }
 
 #partie3:before {
-  background-color: rgb(229, 204, 255);
+  background-color: rgb(225, 225, 225);
   transform: skewX(180deg);
   height: calc(100%);
   width: calc(100%);
@@ -190,14 +191,11 @@ body {
 }
 
 #partie4:before {
-  background-color: rgb(204, 229, 255);
+  background-color: rgb(230, 230, 230);
   transform: rotate(180deg);
   height: calc(100%);
   width: calc(100%);
-  cursor: pointer;
   margin: 0%;
-  display: flex;
-  justify-content: center;
 }
 
 /* Supprime les bordures entre les parties */
@@ -230,13 +228,13 @@ body {
 }
 
 #boutonMenu1 {
-  color: rgb(0, 0, 0);
+  color: #48d048;
   cursor: pointer;
-  height: calc(10%);
-  width: calc(20%);
+  height: calc(15%);
+  width: calc(30%);
   background-color: transparent;
   margin: 2px;
-  border-color: #000000;
+  border-color: #48d048;
   font-weight: bold;
   border-radius: 12px;
   font-size: 20px;
@@ -244,13 +242,13 @@ body {
 }
 
 #boutonMenu2 {
-  color: rgba(0, 0, 0);
+  color: #a73b3b;
   cursor: pointer;
-  height: calc(10%);
-  width: calc(20%);
+  height: calc(15%);
+  width: calc(30%);
   background-color: transparent;
   margin: 2px;
-  border-color: #000000;
+  border-color: #a73b3b;
   font-weight: bold;
   border-radius: 12px;
   font-size: 20px;
@@ -258,14 +256,14 @@ body {
 }
 
 #boutonMenu3 {
-  color: rgba(0, 0, 0);
+  color: #6153cb;
   cursor: pointer;
-  height: calc(10%);
-  width: calc(20%);
+  height: calc(15%);
+  width: calc(30%);
   background-color: transparent;
   font-weight: bold;
   margin: 2px;
-  border-color: #000000;
+  border-color: #6153cb;
   font-weight: bold;
   border-radius: 12px;
   font-size: 20px;
@@ -273,13 +271,13 @@ body {
 }
 
 #boutonMenu4 {
-  color: rgba(0, 0, 0);
+  color: #dacd49;
   cursor: pointer;
-  height: calc(150%);
-  width: calc(23%);
+  height: calc(15%);
+  width: calc(30%);
   background-color: transparent;
   margin: 2px;
-  border-color: #000000;
+  border-color: #dacd49;
   font-weight: bold;
   border-radius: 12px;
   font-size: 20px;
@@ -465,125 +463,4 @@ button:hover {
 display: flex;
 justify-content: center;
 padding-bottom: 50px;
-}
-
-.kanban-heading {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  font-family: sans-serif;
-  justify-content: center;
-}
-
-.kanban-board {
-  display: flex;
-  justify-content: center;
-  font-family: sans-serif;
-}
-
-.kanban-heading-text {
-  font-size: 1.8rem;
-  background-color: rgba(255, 99, 71, 0.568);
-  padding: 0.8rem 1.7rem;
-  border-radius: 0.5rem;
-  margin: 1rem;
-}
-
-.kanban-block,
-.create-new-task-block {
-  padding: 0.6rem;
-  width: 30.5%;
-  min-width: 14rem;
-  min-height: 4.5rem;
-  border-radius: 0.3rem;
-}
-
-#todo {
-  background-color: #fec6d1cb;
-}
-
-#inprogress {
-  background-color: #ffae00bd;
-  /* display: none; */
-}
-
-#done {
-  background-color: #018b01cc;
-  /* display: none; */
-}
-
-.task {
-  background-color: white;
-  margin: 0.2rem 0rem 0.3rem 0rem;
-  border: 0.1rem solid black;
-  border-radius: 0.2rem;
-  padding: 0.5rem 0.2rem 0.5rem 2rem;
-}
-
-#task-button {
-  margin: 0.2rem 0rem 0.1rem 0rem;
-  background-color: white;
-  border-radius: 0.2rem;
-  width: 100%;
-  border: 0.25rem solid black;
-  padding: 0.5rem 2.7rem;
-  border-radius: 0.3rem;
-  font-size: 1rem;
-}
-
-.create-new-task-block {
-  display: none;
-  /* display: flex; */
-  background: #ffaf00;
-  width: 64.4%;
-  flex-direction: column;
-}
-
-.form-row {
-  display: flex;
-  flex-direction: row;
-  margin: 0.2rem;
-}
-
-.form-row-label {
-  width: 15%;
-  padding: 0.2rem;
-  padding-right: 0.5rem;
-  border: 0.1rem solid black;
-  border-right: 0;
-  border-radius: 0.2rem 0rem 0rem 0.2rem;
-}
-
-.form-row-input {
-  border: 0.1rem solid black;
-  border-radius: 0rem 0.2rem 0.2rem 0rem;
-  width: 85%;
-}
-
-textarea {
-  resize: none;
-}
-
-.form-row-buttons {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin: 0.2rem;
-}
-
-#edit-button,
-#save-button,
-#cancel-button {
-  margin: 0.2rem 0rem 0.1rem 0rem;
-  background-color: white;
-  border-radius: 0.2rem;
-  width: 49.2%;
-  border: 0.25rem solid black;
-  padding: 0.5rem 2.7rem;
-  border-radius: 0.3rem;
-  font-size: 1rem;
-}
-
-#edit-button {
-  display: none;
 }
