@@ -1,4 +1,12 @@
-const ADODB = require('node-adodb');
-const connect = ADODB.open('Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C://Users//aocol//OneDrive//Documents//IMT//Entreprise//Test//Affichage ELP.accdb;');
-exports.connection = connect
+const fs = require('fs');
+const initSqlJs = require('sql.js/dist/sql-wasm');
+const filebuffer = fs.readFileSync('C:\\Users\\ugoma\\main');
 
+
+exports.connection =  initSqlJs().then(async function(SQL){
+    // Load the db
+    const db = new SQL.Database(filebuffer);
+    var res = await db.exec("SELECT * FROM company ;");
+    console.log("res: "+JSON.stringify(res))
+    return db
+  });

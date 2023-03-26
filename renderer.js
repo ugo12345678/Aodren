@@ -7,8 +7,13 @@
  */
 window.addEventListener('DOMContentLoaded', () => {
 
-    let test = window.api.getUtilisateurs()
-
-    console.log(test+"ok");
+    
+    window.api.getUtilisateurs()
+    .then(result => {
+    })
+    .catch(error => {
+      console.error(error);
+    });
+    
    
   })
