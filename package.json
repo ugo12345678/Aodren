@@ -24,6 +24,7 @@
     "electron-packager": "^17.1.1"
   },
   "dependencies": {
+    "animejs": "^3.2.1",
     "edge-js": "^19.3.0",
     "electron-edge-js": "^23.0.0",
     "node-adodb": "^5.0.3",

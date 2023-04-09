@@ -1,4 +1,3 @@
-/* styles.css */
 @import url('https://rsms.me/inter/inter-ui.css');
 ::selection {
   background: #2D2F36;
@@ -10,13 +9,10 @@
   background: #2D2F36;
 }
 body {
-  background: rgba(255, 255, 255, 0.521);
+  background: white;
   font-family: 'Inter UI', sans-serif;
   margin: 0;
   padding: 20px;
-}
-.logo {
-  padding-left: 42px;
 }
 .page {
   background: #e2e2e5;
@@ -63,7 +59,7 @@ body {
   }
 }
 .login {
-  font-size: 30px;
+  font-size: 50px;
   font-weight: 900;
   margin: 50px 40px 40px;
 }
@@ -135,332 +131,15 @@ input::-moz-focus-inner {
   color: #d0d0d2;
 }
 
-/* Utilisez Grid pour diviser l'écran en 4 parties carrées */
-body {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  height: 95.5vh;
-  margin: 0%;
+#identifiant::placeholder {
+  color: red;
+  font-style: italic;
+  font-size:medium;
 }
 
-/* Donne à chaque partie une couleur différente et stylée */
-.partie {
-  position: relative;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  display: flex;
-  flex-direction: row;
+#password::placeholder {
+  color: red;
+  font-style: italic;
+  font-size:medium;
 }
 
-.partie:before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  border: 2px solid black;
-  top: 0;
-  left: 0;
-  z-index: -1;
-}
-
-#partie1:before {
-  background-color: rgb(230, 230, 230);
-  transform: rotate(180deg);
-  height: calc(100%);
-  width: calc(100%);
-  margin: 0%;
-}
-
-#partie2:before {
-  background-color: rgb(225, 225, 225);
-  transform: skewY(180deg);
-  height: calc(100%);
-  width: calc(100%);
-  margin: 0%;
-}
-
-#partie3:before {
-  background-color: rgb(225, 225, 225);
-  transform: skewX(180deg);
-  height: calc(100%);
-  width: calc(100%);
-  margin: 0%;
-}
-
-#partie4:before {
-  background-color: rgb(230, 230, 230);
-  transform: rotate(180deg);
-  height: calc(100%);
-  width: calc(100%);
-  margin: 0%;
-}
-
-/* Supprime les bordures entre les parties */
-#partie1, #partie2 {
-  border-right: none;
-  display: flex;
-  justify-content: center;
-  padding-top:  10px;
-}
-
-#partie1, #partie3 {
-  border-bottom: none;
-  display: flex;
-  justify-content: center;
-  padding-top: 10px;
-}
-
-#partie2, #partie4 {
-  border-bottom: none;
-  display: flex;
-  justify-content: center;
-  padding-top: 10px;
-}
-
-#partie3, #partie4 {
-  border-right: none;
-  display: flex;
-  justify-content: center;
-  padding-top: 10px;
-}
-
-#boutonMenu1 {
-  color: #48d048;
-  cursor: pointer;
-  height: calc(15%);
-  width: calc(30%);
-  background-color: transparent;
-  margin: 2px;
-  border-color: #48d048;
-  font-weight: bold;
-  border-radius: 12px;
-  font-size: 20px;
-  transition: all 0.2s ease-in-out;
-}
-
-#boutonMenu2 {
-  color: #a73b3b;
-  cursor: pointer;
-  height: calc(15%);
-  width: calc(30%);
-  background-color: transparent;
-  margin: 2px;
-  border-color: #a73b3b;
-  font-weight: bold;
-  border-radius: 12px;
-  font-size: 20px;
-  transition: all 0.2s ease-in-out;
-}
-
-#boutonMenu3 {
-  color: #6153cb;
-  cursor: pointer;
-  height: calc(15%);
-  width: calc(30%);
-  background-color: transparent;
-  font-weight: bold;
-  margin: 2px;
-  border-color: #6153cb;
-  font-weight: bold;
-  border-radius: 12px;
-  font-size: 20px;
-  transition: all 0.2s ease-in-out;
-}
-
-#boutonMenu4 {
-  color: #dacd49;
-  cursor: pointer;
-  height: calc(15%);
-  width: calc(30%);
-  background-color: transparent;
-  margin: 2px;
-  border-color: #dacd49;
-  font-weight: bold;
-  border-radius: 12px;
-  font-size: 20px;
-  transition: all 0.2s ease-in-out;
-}
-
-button:hover {
-  transform: scale(1.2);
-}
-/* Add styles here to customize the appearance of your app */
-
-
-
- body
- {
-   margin: 0;
-   padding: 0;
-   
-   /* make it look decent enough */
-   background: #232323;
-   color: #000000;
-   font-family: "Avenir Next", "Avenir", sans-serif;
- }
- 
- #menuToggle
- {
-   display: block;
-   position: absolute;
-   top: 10px;
-   left: 10px;
-   
-   z-index: 1;
-   
-   -webkit-user-select: none;
-   user-select: none;
- }
- 
- #menuToggle a
- {
-   text-decoration: none;
-   color: #232323;
-   
-   transition: color 0.3s ease;
- }
- 
- #menuToggle a:hover
- {
-   color: rgb(249, 71, 255);
- }
- 
- 
- #menuToggle input
- {
-   display: block;
-   width: 40px;
-   height: 32px;
-   position: absolute;
-   top: -7px;
-   left: -5px;
-   
-   cursor: pointer;
-   
-   opacity: 0; /* hide this */
-   z-index: 2; /* and place it over the hamburger */
-   
-   -webkit-touch-callout: none;
- }
- 
- /*
-  * Just a quick hamburger
-  */
- #menuToggle span
- {
-   display: block;
-   width: 33px;
-   height: 4px;
-   margin-bottom: 5px;
-   position: relative;
-   
-   background: #cdcdcd;
-   border-radius: 3px;
-   
-   z-index: 1;
-   
-   transform-origin: 4px 0px;
-   
-   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-               background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-               opacity 0.55s ease;
- }
- 
- #menuToggle span:first-child
- {
-   transform-origin: 0% 0%;
- }
- 
- #menuToggle span:nth-last-child(2)
- {
-   transform-origin: 0% 100%;
- }
- 
- /* 
-  * Transform all the slices of hamburger
-  * into a crossmark.
-  */
- #menuToggle input:checked ~ span
- {
-   opacity: 1;
-   transform: rotate(45deg) translate(-2px, -1px);
-   background: #232323;
- }
- 
- /*
-  * But let's hide the middle one.
-  */
- #menuToggle input:checked ~ span:nth-last-child(3)
- {
-   opacity: 0;
-   transform: rotate(0deg) scale(0.2, 0.2);
- }
- 
- /*
-  * Ohyeah and the last one should go the other direction
-  */
- #menuToggle input:checked ~ span:nth-last-child(2)
- {
-   transform: rotate(-45deg) translate(0, -1px);
- }
- 
- /*
-  * Make this absolute positioned
-  * at the top left of the screen
-  */
- #menu
- {
-   position: absolute;
-   width: 1000px;
-   height: 380px;
-   margin: -100px 0 0 -50px;
-   padding: 100px;
-   padding-top: 90px;
-   
-   background: #ededed;
-   list-style-type: none;
-   -webkit-font-smoothing: antialiased;
-   /* to stop flickering of text in safari */
-   
-   transform-origin: 0% 0%;
-   transform: translate(-100%, 0);
-   
-   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
- }
- 
- #menu li
- {
-   padding: 10px 0;
-   font-size: 22px;
- }
- 
- /*
-  * And let's slide it in from the left
-  */
- #menuToggle input:checked ~ ul
- {
-   transform: none;
- }
-
-
- body {
-  background-color: black;
-}
-
-.container {
-  width: 90%;
-  display: flex;
-  flex-direction: column;
-  min-width: 60%;
-  padding-top: 47px;
-  justify-content: center;
-}
-
-#bouton4separation{
-display: flex;
-justify-content: center;
-padding-bottom: 50px;
-}

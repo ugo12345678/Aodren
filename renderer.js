@@ -8,12 +8,5 @@
 window.addEventListener('DOMContentLoaded', () => {
 
     
-    window.api.getUtilisateurs()
-    .then(result => {
-    })
-    .catch(error => {
-      console.error(error);
-    });
-    
-   
-  })
+
+})
